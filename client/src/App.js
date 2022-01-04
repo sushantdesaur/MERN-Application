@@ -14,7 +14,7 @@ const App = () => {
         <Navbar/>
         <Routes>
           <Route path='/' exact element={<Home/>}></Route>
-          <Route path='/auth' exact element={<Auth/>}></Route>
+          <Route path='/auth' element={<Auth/>}></Route>
         </Routes> 
       </Container>
     </BrowserRouter>  
