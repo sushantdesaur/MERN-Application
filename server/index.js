@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
 app.use('/posts', postRoutes);
-app.use('/user', postRoutes);
+app.use('/user', userRoutes);
 
 const CONNECTION_URL = 'mongodb+srv://DreamUser:LRypeyiCXsHiJ2d@cluster0.gkzil.mongodb.net/AuthenticationApp?retryWrites=true&w=majority';
 const PORT = process.env.PORT|| 5000;
